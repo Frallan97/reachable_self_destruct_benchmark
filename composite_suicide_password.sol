@@ -15,7 +15,7 @@ contract CompositeSuicide {
     owner = newOwner;
   }
 
-  function passwordProtectedUnlock(int key) internal {
+  function passwordProtectedUnlock(int key) public {
     require(key == 8765);
     locked = false;
   }
